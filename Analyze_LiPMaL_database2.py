@@ -111,6 +111,10 @@ features = ['Gr std','Gr_absdiff','Neutron Density','Frequency P90']
 X    = df3[features].values
 Facies_name = ['Facies_Overbank','Facies_Lobe_Complex','Facies_Lobe','Facies_Fan_System','Facies_Drape','Facies_Channel_System','Facies_Channel_Complex']
 
+df3.to_csv('/home/dawad/LiPMaL/temp/Dataframe_DW3.csv')
+df3 = pd.read_csv('/home/dawad/LiPMaL/temp/Dataframe_DW3.csv')
+
+
 # Test out linear regression
 Accuracy_lin = pd.Series(np.ones_like(Facies_name),index = Facies_name)
 cnt=0
